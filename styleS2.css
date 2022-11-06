@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(bg-intro-desktop.png);
+    background-color: rgb(224, 105, 115);
+        
+}
+
+body{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    padding: 12% 0 0 12%;
+    color: white;
+    line-height: 4em;
+}
+
+.main h2{
+    font-size: 50px;
+    margin-bottom: 1rem;
+}
+
+.main .intro{
+    font-size: 20px;
+    line-height: 1.2em;
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+    padding: 5% 5% 0 5%;
+    margin-right: 5%;
+    gap: 20px;
+  
+}
+
+.infoUp{
+    width: 480px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    background: rgb(87, 49, 175);
+    border-radius: 5px;
+    border: 0;
+    text-align: center;
+    justify-content: center;
+    padding-top: 4%;
+        
+}
+
+.infoUp strong{
+    background: rgb(87, 49, 175);
+    font-weight: 700;
+}
+
+.form {
+    padding: 3% 3% 5% 3%;
+    border-radius: 5px;
+    font-size: 16px;
+    background: white;     
+}
+
+.form div{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+}
+
+.form .input{
+    background: white;
+    border-radius: 5px;
+    border: 1px solid rgb(177, 177, 177);
+    padding: 1rem ;
+    margin: 5px 0 5px 0;
+    
+}
+
+.botonEnviar{
+    padding: 10px 25px;
+    margin-top: 30px;
+    color: white;
+    border-radius: 8px;
+    border: 0;
+    text-transform: uppercase;
+    font-size: 23px;
+    background: rgb(39, 204, 113);
+    font-weight: 700;
+}
+
+.botonEnviar:hover{
+    cursor: pointer;
+    font-size: 24px;
+    transition: 200ms;
+
+}
+
+.terminosycondiciones{
+    background: white;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.terminosycondiciones strong{
+    background: white;
+}
+
+.output p{
+    text-align: center;
+    background: rgb(255, 241, 241);
+    border-radius: 5px;
+    margin: 1%;
+    box-shadow: 2px 2px 2px 2px rgba(5, 5, 5, 0.32);
+}
+
+a{
+    text-decoration: none;
+}
+a:link{color:rgb(255, 46, 81)};
+a:visited{color:rgb(235, 131, 148)}
+
+@media screen and (max-width:650px) {
+    *{
+        background-image: url(bg-intro-desktop.png);
+    }
+    
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 3%;
+    }
+
+    .main h2{
+        font-size: 40px;
+        line-height: 1.2em;
+    }
+       
+    .article{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 5% 10% 10% 10%;
+        padding: auto;
+    }
+
+
+    .form {
+        width: 120%;
+        background: white; 
+    }
+
+    .botonEnviar{
+        width: 100%;
+        background: rgb(39, 204, 113);
+    }
+
+    .infoUp{
+        width: 110%;
+        height: auto;
+        font-weight: 400;
+        padding: 6%;
+            
+    }
+
+}
